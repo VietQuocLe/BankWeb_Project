@@ -1,0 +1,101 @@
+.card-container {
+    display: flex;
+}
+
+.card-parent{
+    width: 16.67%;
+    flex: 0 0 16.67%; 
+    padding: 16px 2px;
+}
+
+.card-container .card {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.card .content-body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .content {
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
+.card .content h2 {
+    padding-top: 12px;
+    position: relative;
+    z-index: 1;
+    font-size: 2.5rem;
+}
+
+.card .content img {
+    width: 60px;
+    height: 60px;
+}
+
+ .card .content .additional-info {
+    position: relative;
+    font-size: 2rem;
+    list-style: none;
+    padding: 70px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    z-index: 100;
+} 
+
+.card .content .additional-info li{
+    padding: 6px 0;
+    cursor: pointer;
+}
+
+.card .content .additional-info li:hover{
+    text-decoration: underline;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card:hover .overlay{
+    background: rgba(116, 36, 196, 0.8);
+}
+
+.card:hover .content .additional-info {
+    opacity: 1; 
+
+}
+
+.card .content .image{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.card:hover .content img {
+    opacity: 0; 
+}

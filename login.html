@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/hom.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="img/shortcut-icon.jpg" rel="shortcut icon">
+    <title>TPBank - Đăng nhập</title>
+</head>
+<body>
+
+    <div class="login-page">
+        <div class="container">
+            <div class="top">
+                <div class="left">
+                    <a href="index.html">
+                        <img class="login-logo" src="img/Login/logo.svg" alt="TPBank">
+                    </a>
+                </div>
+                <div class="right">
+                    <a>
+                        <img src="img/Login/ic_support.svg" alt="ic_support">
+                        <div>
+                            <span>1900 6036</span>
+                            hoặc
+                            <span>1900 585 885</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <img src="img/Login/ic_search_location.svg" alt="ic_search_location">
+                        <div>Tìm điểm giao dịch</div>
+                    </a>
+                    <a href="#">
+                        <img src="img/Login/ic_scale.svg" alt="ic_scale">
+                        <div>Tra cứu tỷ giá</div>
+                    </a>
+                    <a href="#">
+                        <img class="lang-icon" src="img/Login/flag-vi.png" alt="flag-vi">
+                    </a>
+                </div>
+            </div>
+            <div class="content-wrap">
+                <div class=welcome>TPBank xin chào Bạn,</div>
+                <div class="username-container">
+                    <input class="form-control" maxlength="50" type="text" placeholder="Tên đăng nhập">
+                    <div class="msg-error"></div>
+                </div>
+                <div class="password-container">
+                    <input class="form-control" maxlength="32" type="password" placeholder="Mật khẩu">
+                    <div class="msg-error"></div>
+                    <div class="icon-eye">
+                        <img src="img/Login/ic_eye.svg" alt="ic_eye">
+                        <!-- <img src="img/Login/ic_un-eye.svg" alt="ic_un-eye"> -->
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a class="forget" href="#">Quên mật khẩu?</a>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-login">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <div class="left"> &copy; 2019 NGÂN HÀNG SỐ dành cho Khách hàng Cá nhân | www.tpb.vn </div>
+                <div class="right">
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Điều khoản sử dụng</a>
+                    <a href="#">
+                        <img src="img/Login/download-ios-dark.svg" alt="download-ios-dark">
+                    </a>
+                    <a href="#">
+                        <img src="img/Login/download-android-dark.svg" alt="download-android-dark">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-mb">
+            <a href="#">
+                <img src="img/Login/ic_support.svg" alt="ic_support">
+                <div>1900 58 58 85</div>
+            </a>
+            <a href="#">
+                <img src="img/Login/ic_search_location.svg" alt="ic_search_location">
+                <div>Tìm điểm giao dịch</div>
+            </a>
+            <a href="#">
+                <img src="img/Login/ic_scale.svg" alt="ic_scale">
+                <div>Tra cứu tỷ giá</div>
+            </a>
+        </div>
+    </div>
+
+    <script src="js/header.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/loading.js"></script>
+    <script type="text/javascript" src="js/package/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> 
+    <script>
+     document.addEventListener('DOMContentLoaded', function () {
+       new WOW({
+         boxClass: 'wow',
+         animateClass: 'animate__animated',
+         offset: 100, 
+         mobile: true,
+         live: true
+       }).init();
+     });
+   </script>
+</body>
+</html>
